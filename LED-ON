@@ -1,0 +1,10 @@
+#include<AT89S52.h>
+#define ULED P2_0
+void main()
+{
+ULED=0; /*TO TURN ON THE LED*/
+while(1) /*INFINITE LOOP*/
+ {
+ }
+}
+
