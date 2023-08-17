@@ -1,15 +1,15 @@
 #include<AT89S52.h>
-#define ULED P2_0 //CONNECT LED IN PORT2.0
+#define ULED P2_0 /*CONNECT LED IN PORT2.0*/
 void delay(int);  
 void main()
 {
-while(1)    //TO BLINK THE LED AGAIN AND AGAIN 
+while(1)    /*TO BLINK THE LED AGAIN AND AGAIN */
  {
  ULED=!ULED;
- delay(10);  //CALL DELAY PROGRAM TO BLINK THE LED
+ delay(10);  /*CALL DELAY PROGRAM TO BLINK THE LED*/
  }
 }
-//DELAY PROGRAM
+/*DELAY PROGRAM*/
 void delay(int time)
 {
 int i,j;
