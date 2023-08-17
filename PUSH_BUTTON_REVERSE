@@ -1,0 +1,14 @@
+#include<AT89S52.h>
+#define ULED P2_0 /*LED CONNECTED TO PORT2.0*/
+#define SW P3_7 /*SWITCH CONNECTED TO PORT3.7*/
+void main(){
+SW=1;
+ULED=0;
+while(1){
+if(SW==0){ /*WHILE SWITCH ON LED TURNS OFF*/
+ULED=1;
+}else{
+ULED=0; /*/*WHILE SWITCH OFF LED TURNS ON*/
+}
+}
+}
